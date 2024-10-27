@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Wave Native Art</title>
+
+        <style>
+
+            html,
+            body {
+                margin: auto;
+                padding: 0px;
+                background-image: url(imgs/grads2.png);
+                background-color: rgb(254, 254, 254);
+                color: rgb(244, 255, 255);
+            }
+
+
+            .container {
+                width: 1200px;
+                margin: auto;
+                column-gap: 13px;
+                row-gap: 8px;
+                padding-top: 10px;
+                
+            }
+
+            header {
+                background-image: url(imgs/gradirn.png);
+                background-color: rgb(31, 92, 93);
+                color: honeydew;
+            }
+
+
+            .primary-nav {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                }
+
+            li a:hover {
+
+                color: #070523;
+                box-shadow: 0 0 5px #26a08c, 0 0 25px #26a08c, 0 0 50px #26a08c, 0 0 200px #26a08c;
+                }
+            
+
+            .primary-nav>ul {
+                display: flex;
+                flex-direction: row;
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+                justify-content: space-between;
+                flex: 2;
+                align-items: center;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                
+
+            }
+
+            .text {
+
+                background: url(imgs/IMG_9054.jpeg);
+
+                -webkit-background-clip: text;
+                background-clip: text;
+
+                color: transparent;
+                text-align: center;
+                font-size: 75px;
+                padding: 0;
+                -webkit-text-stroke: 3px rgb(18, 142, 142);
+            }
+
+            .subhead {
+                color: black;
+                text-align: center;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                font-size: larger;
+            }
+            
+            h2 {
+                color: darkslategrey;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            }
+            h3 {
+
+                padding: 30px;
+                color: rgb(255, 255, 255);
+                background-color: rgb(79, 134, 135);
+            }
+                
+            h4 {
+                color: rgb(34, 69, 69);
+            }
+            .fa {
+                padding: 20px;
+                font-size: 30px;
+                width: 50px;
+                text-align: center;
+                text-decoration: none;
+                margin: 5px 2px;
+                border-radius: 10%;
+            }
+
+            .fa:hover {
+                opacity: 0.7;
+            }
+            .fa-instagram {
+                background-image: url(imgs/instagram_logo_gradient_rainbow_by_projectowl_db1xp40-fullview.jpg);
+                
+                color: white;
+                }
+
+            .fa-facebook {
+                background: #3B5998;
+                color: white;
+            }
+
+            .logo {
+                flex: 3;
+            }
+            
+            .banner {
+                width: 50%;
+            }
+
+            .stories {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .card-title {
+                color: rgb(34, 69, 69);
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+            .card-img {
+                max-width: 70%;
+                height: auto;
+                border-radius: 10%;
+            }
+
+            .button {
+                background-color: #04AA6D;
+                border: none;
+                color: white;
+                padding: 16px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                transition-duration: 0.4s;
+                cursor: pointer;
+                border-radius: 20%;
+                }
+
+             .button2 {
+                background-color: white; 
+                color: black; 
+                border: 2px solid #26a08c;
+                }
+
+             .button2:hover {
+                background-color: #95c7c3;
+                color: white;
+                box-shadow: 0 0 5px #26a08c, 0 0 25px #26a08c, 0 0 50px #26a08c, 0 0 200px #26a08c;
+                }
+
+
+
+            .footer {
+                background-color: rgb(60, 107, 108);
+                color: honeydew;
+                position:sticky;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                text-align: center;
+            }
+
+            @media (max-width: 1000px) {
+                .container {
+                    width: 1000px;
+                 }
+
+                .stories {
+                    grid-template-columns: 1fr 1fr;
+                }
+            }
+
+            @media (max-width: 600px) {
+                .container {
+                    width: 600px;
+
+                }
+                .stories {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+
+            @media (max-width: 600px) {
+                .container {
+                    width: 100%;
+
+                }
+                .stories {
+                    grid-template-columns: 1fr;
+                }
+
+                .primary-nav {
+                    flex-direction: column;
+            
+                }
+                .primary-nav>ul {
+                    flex-direction: column;
+                }
+            }
+
+        </style>
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="primary-nav container">
+            <div class="logo"><img src="imgs/IMG_0352.PNG" alt="logo" width="100" height="auto"></div>
+            <div class="logo"><img src="imgs/km2.png" alt="logo" width="300"></div>
+            <ul>
+                <li><a href="wavenativeart.html">Home</a></li> 
+               <li><a href="Finearts.html">Fine Arts</a></li> 
+               <li><a href="Murals.html">Murals</a></li> 
+               <li><a href="aboutme.html">About Me</a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <section class="text">
+        <H1>About Me</H1>
+    </section>
+    <section class="subhead">
+        <h1>Kayli Marchese</h1>
+    </section>
+
+
+    <h3>As for many, art is an expression and outlet where the imagination is brought into reality. While this is also true for myself, my everything is put into my pieces. Hours of sadness, anger, and love are worked through my canvas. Being born and raised in Jupiter, Florida, I’ve felt bound to the water, it makes me feel free and weightless in the big unknown. I paint what I love and love what I paint, between the ocean landscapes or the creatures it homes, I always turn to nature as my muse. Painting is my passion and my heart, a dream I’ve held since I could remember. I will continue to live out my dream of being an artist until my hands can no longer hold onto a brush, but my art will always remain as small pieces of me and my life and I’m honored people get to enjoy it along with me. </h3>
+
+    <main class="stories container">
+
+        <article class="card">
+            <img class="card-img" src="imgs/self.png" height="100">
+            <h1 class="card-title"></h1>
+            <a href="finearts.html">
+                <button class="button button2">Fine Arts</button> 
+            </a>
+            
+        </article>
+
+
+        <article class="card" style="grid-row: span 2;">
+            <h2>Contact Me</h2>
+            <h4>Email: wnartist2@gmail.com</h4>
+            <h4>Phone Text: 561-339-8824</h4>
+            <h4>Instagram: @wavenativeart</h4>
+            <h4>Facebook: Wave Native Art</h4>
+            <a href="https://www.instagram.com/wavenativeart/" class="fa fa-instagram"></a>
+            <a href="https://www.facebook.com/FLartistkay/" class="fa fa-facebook"></a>
+
+        </article>
+        
+
+
+
+    </main>
+
+
+
+    <footer>
+        <div class="footer container">
+            Copyright 2024
+        </div>
+    </footer>
+
+</body>
+
+</html>

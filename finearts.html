@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Fine Arts</title>
+
+        <style>
+
+            #bannerimage {
+                 width: 100%;
+                background-image: url(imgs/beach.png);
+                height: 405px;
+                background-color: purple;
+                background-position: center;
+             }
+
+            header {
+                background-image: url(imgs/gradirn.png);
+                background-color: rgb(27, 87, 89);
+                color: honeydew;
+            }
+
+
+            .primary-nav {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .primary-nav>ul {
+                display: flex;
+                flex-direction: row;
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+                justify-content: space-between;
+                flex: 2;
+                align-items: center;
+            }
+
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                }
+
+            li a:hover {
+                box-shadow: 0 0 5px #26a08c, 0 0 25px #26a08c, 0 0 50px #26a08c, 0 0 200px #26a08c;
+                
+                color: #070523;
+                }
+
+
+            .logo{
+
+                flex: 3;
+            }
+
+
+        
+            body{
+                background-image: url(imgs/gradirn.png);
+            }
+
+            .grid-container {
+                display: grid;
+                grid-template-columns: auto auto auto ;
+                gap: 10px;
+                background-color: #d3f3ee;
+                padding: 10px;
+                background-size: contain ;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                }
+
+            .grid-container > div {
+                background-color: rgba(255, 255, 255, 0.8);
+                text-align: center;
+                padding: 20px 0;
+                font-size: 20px;
+                }
+
+            .footer {
+                background-color: rgb(60, 107, 108);
+                color: honeydew;
+                position:sticky;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                text-align: center;
+            }
+
+            @media (max-width: 1000px) {
+                .container {
+                    width: 1000px;
+                 }
+
+                .stories {
+                    grid-template-columns: 1fr 1fr;
+                }
+            }
+
+            @media (max-width: 600px) {
+                .container {
+                    width: 600px;
+
+                }
+                .stories {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+
+            @media (max-width: 600px) {
+                .container {
+                    width: 100%;
+
+                }
+                .stories {
+                    grid-template-columns: 1fr;
+                }
+
+                .primary-nav {
+                    flex-direction: column;
+            
+                }
+                .primary-nav>ul {
+                    flex-direction: column;
+                }
+            }
+
+
+         </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="primary-nav container">
+            <div class="logo"><img src="imgs/IMG_0352.PNG" alt="logo" width="90" height="auto"></div>
+            <div class="logo"><img src="imgs/km2.png" alt="logo" width="300"></div>
+            <ul>
+                <li><a href="wavenativeart.html">Home</a></li> 
+                <li><a href="murals.html">Murals</a></li> 
+                <li><a href="Finearts.html">Fine Arts</a></li> 
+                <li><a href="aboutme.html">About Me</a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="grid-container">
+            <div><img src="imgs/seahorse.JPG" alt="seahorse" width="350pt" height="370pt">
+                <h2>Seahorse</h2>
+                <p>A bicolored acrylic painting </p>
+            </div>
+            
+            <div><img src="imgs/mahi.png" alt="mahi" width="350pt">
+                <h2>Mahi-Mahi</h2>
+            </div>
+           
+            <div><img src="imgs/manatee.JPG" width="350pt">
+                <h2>Manatees</h2>
+            </div>
+           
+            <div><img src="imgs/turtle.jpg" alt="turtle" width="350pt">
+                <h2>Turtle</h2>
+            </div>  
+           
+            <div><img src="imgs/IMG_0082.jpg" alt="hog" width="350pt">
+                <h2>Hogfish</h2>
+            </div>
+
+            <div>
+                <video width="400" controls>
+                    <source src="imgs/beach.mp4" type="video/webm" />
+                    <source src="myVideo.mp4" type="video/mp4" />
+                </video>
+            </div>
+
+            <div><img src="imgs/623763FE-7F30-44A6-A427-3E7CB03D59C8.jpeg" alt="v" width="350pt">
+                <h2>Market Event</h2>
+            </div>
+
+            <div><img src="imgs/2D1F2CF2-1E74-413F-B09E-0E9AE6162B2B.jpeg" alt="m" width="350pt">
+                <h2>Market Event</h2>
+            </div>
+
+            <div><img src="imgs/E545226B-DF2D-4509-9081-74FCD0A59F84.jpeg" alt="hog" width="350pt">
+                <h2>Stickers</h2>
+                <p>Stickers are one of my favorite ways to market</p>
+            </div>
+
+            <div><img src="imgs/fishy-03.png" alt="m" width="350pt">
+                <h2>Sharks at the Beach</h2>
+            </div>
+
+            <div><img src="imgs/fishy-02.png" alt="m" width="350pt">
+                <img src="imgs/hog.pdf" width="350pt">
+                <h2>Market Event</h2>
+            </div>
+
+            <div><img src="imgs/paint-06.png" alt="m" width="350pt">
+                <h2>Chachi</h2>
+            </div>
+
+            <div><img src="imgs/paint-07.png" alt="m" width="350pt">
+                <h2></h2>
+            </div>
+
+            <div><img src="imgs/paint-08.png" alt="m" width="350pt">
+                <h2>Hogfish Sculpture</h2>
+            </div>
+            
+            <div><img src="imgs/paint-10.png" alt="m" width="350pt">
+                <h2>Jade Lotus</h2>
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+    </main>
+
+
+
+
+
+
+
+    <footer>
+        <div class="footer container">
+            Copyright 2024
+        </div>
+    </footer>
+
+
+
+
+</body>
+
+</html>

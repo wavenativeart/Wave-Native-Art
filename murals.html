@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Murals</title>
+
+        <style>
+
+            #bannerimage {
+                 width: 100%;
+                background-image: url(imgs/beach.png);
+                height: 405px;
+                background-color: purple;
+                background-position: center;
+             }
+
+            header {
+                background-image: url(imgs/gradirn.png);
+                background-color: rgb(27, 87, 89);
+                color: honeydew;
+            }
+
+
+            .primary-nav {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .primary-nav>ul {
+                display: flex;
+                flex-direction: row;
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+                justify-content: space-between;
+                flex: 2;
+                align-items: center;
+            }
+
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                }
+
+            li a:hover {
+                box-shadow: 0 0 5px #26a08c, 0 0 25px #26a08c, 0 0 50px #26a08c, 0 0 200px #26a08c;
+                
+                color: #070523;
+                }
+
+
+            .logo{
+
+                flex: 3;
+            }
+
+            h1{
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                color: darkslategray;
+            }
+        
+            body{
+                background-image: url(imgs/gradirn.png);
+            }
+
+            #s6 {
+			height:1500px;
+			background-color:rgb(238, 243, 230);
+			margin-left: 4%;
+			margin-right: 4%;
+
+			background-image: url( "AdobeStock_308338938.jpeg");
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: bottom;
+			text-align: center;
+			line-height: 300%;
+			font-size: 14pt;
+			color: white
+        }
+
+        .row {
+            display: -ms-flexbox; /* IE10 */
+            display: flex;
+            -ms-flex-wrap: wrap; /* IE10 */
+            flex-wrap: wrap;
+            padding: 0 4px;
+            }
+
+            /* Create four equal columns that sits next to each other */
+            .column {
+            -ms-flex: 24%; /* IE10 */
+            flex: 24%;
+            max-width: 24%;
+            padding: 0 6px;
+            }
+
+            .column img {
+            margin-top: 8px;
+            vertical-align: middle;
+            width: 100%;
+            }
+            .footer {
+                background-color: rgb(60, 107, 108);
+                color: honeydew;
+                position:sticky;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                text-align: center;
+            }
+
+            @media (max-width: 1000px) {
+                .container {
+                    width: 1000px;
+                 }
+
+                .stories {
+                    grid-template-columns: 1fr 1fr;
+                }
+            }
+
+            @media (max-width: 600px) {
+                .container {
+                    width: 600px;
+
+                }
+                .stories {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+
+            @media (max-width: 600px) {
+                .container {
+                    width: 100%;
+
+                }
+                .stories {
+                    grid-template-columns: 1fr;
+                }
+
+                .primary-nav {
+                    flex-direction: column;
+            
+                }
+                .primary-nav>ul {
+                    flex-direction: column;
+                }
+            }
+
+
+         </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="primary-nav container">
+            <div class="logo"><img src="imgs/IMG_0352.PNG" alt="logo" width="90" height="auto"></div>
+            <div class="logo"><img src="imgs/km2.png" alt="logo" width="300"></div>
+            <ul>
+                <li><a href="wavenativeart.html">Home</a></li> 
+                <li><a href="murals.html">Murals</a></li> 
+                <li><a href="Finearts.html">Fine Arts</a></li> 
+                <li><a href="aboutme.html">About Me</a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="grid-container">
+            <div id="s6">
+                <h1>Gallery</h1>
+        
+                <div class="row"> 
+                    <div class="column">
+                        <img src="/imgs/pelican copy.jpg" style="width:100%">
+                        <img src="/imgs/paint-09.png" style="width:100%">
+                        <img src="/imgs/IMG_0269 Small.jpeg" style="width:100%">
+                    </div>
+                    
+                    <div class="column">
+                        <img src="/imgs/paint-05.png" style="width:100%">
+                        <img src="/imgs/manowar.png" style="width:100%">
+                        <img src="/imgs/kladder copy.JPG" style="width:100%">
+                        <img src="/imgs/dixie copy.JPG" style="width:100%">
+                    </div>  
+        
+                    <div class="column">
+                        <img src="/imgs/dixie2 copy.jpg" style="width:100%">
+                        <img src="/imgs/hounds copy.JPG" style="width:100%">
+                        <img src="/imgs/fish1 copy.JPG" style="width:100%">
+                        <img src="/imgs/ck copy.JPG" style="width:100%">
+                    </div>  
+        
+                    <div class="column">
+                        <img src="/imgs/bigdogpano.jpeg" style="width:100%">
+                        <img src="/imgs/fish3.png" style="width:100%">
+                        <img src="/imgs/pelican.png" style="width:100%">
+                    </div>  
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+    </main>
+
+
+
+
+
+
+
+    <footer>
+        <div class="footer container">
+            Copyright 2024
+        </div>
+    </footer>
+
+
+
+
+</body>
+
+</html>
